@@ -6,4 +6,11 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/discord', (req, res) => {
+  res.json({
+    msg: 'Discord'
+  })
+});
+
+
 module.exports = router;
